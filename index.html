@@ -7,11 +7,34 @@
     <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+            
+    <script src="https://kit.fontawesome.com/fc7fc33899.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <input type="text" id="searchInput" placeholder="Search for films...">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo_popcorn.png" >
+            </div>
+            <div class="search" id="searchButton">
+                <i id= "search_icon" class="fa-solid fa-magnifying-glass"></i>
+                <i  id= 'close_icon' class="fa-solid fa-xmark"></i>
+                
+                </i>
+            
+            </div>
+            <div class="search-popup" id="searchPopup">
+            <div class="search-text" id="searchText"></div>
+              <input type="text" id="searchInput" placeholder="Search for a movie..." >
+              <button id="searchMovieButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+             
+            </div>
+          </nav>
+        
+        
     </header>
 
 
@@ -23,7 +46,16 @@
         <!-- Cards of films will go here -->
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+        
+    <p>&copy; 2023 Popcorn Movies. All rights reserved.</p>
+    <div class="icons"> 
+        <img class="icon" src="assets/insta.png">
+        <img  class="icon" src="assets/TWITER.png">
+        <img class= "icon" alt="join our community" src="assets/facebook.png">
+    </div>
+        
+    </footer>
 
     <script src="./js/cards.js"></script>
     <script src="./js/footer.js"></script>
