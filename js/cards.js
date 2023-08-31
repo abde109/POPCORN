@@ -19,6 +19,7 @@ const openModal = function () {
 
 //create the modal
 //card modal
+const cardModal = document.querySelector(".modalCard");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const headerModal = document.createElement('div');
@@ -61,6 +62,8 @@ detailsModal.appendChild(overviewModal);
 detailsModal.appendChild(voteModal);
 detailsModal.appendChild(voteCountModal);
 modal.appendChild(detailsModal);
+cardModal.appendChild(modal);
+
 //close the modal
 buttonModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
