@@ -29,6 +29,8 @@ figure.slider {
   font-size: 0; 
   animation: 20s slidy infinite; 
 }
+
+
 figure.slider figure { 
   width: 20%; height: auto;
   display: inline-block;  position: inherit; 

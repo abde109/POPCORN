@@ -42,9 +42,3 @@ document.addEventListener("keydown", (event) => {
         SliderHome.classList.remove('hidden');
         buttonPn.style.display = 'none';
     });
-
-
-// search.addEventListener("click", function() {
-//     search.style.display = "none"; // Hide search button
-//     close.style.display = "block"; // Show close button
-// });

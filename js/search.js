@@ -8,6 +8,8 @@ async function fetchSearchResults(query, page, containerClass) {
         carousel.innerHTML = '';  // Clear existing content
 
         data.results.forEach(movie => {
+            if (movie.poster_path && movie.id){
+
                 const imageUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
                 const carouselImage = document.createElement('div');
                 carouselImage.classList.add('carouselImagesearch');
@@ -19,6 +21,8 @@ async function fetchSearchResults(query, page, containerClass) {
 
                 carouselImage.appendChild(imgElement);
                 carousel.appendChild(carouselImage);
+            }
+                
         });
     } catch (error) {
         console.error("Error:", error);
@@ -55,7 +59,7 @@ document.getElementById('searchInput').addEventListener('input', function () {
         SliderHome.classList.remove('hidden');
         heroSection.classList.remove('hidden');
         let mainContent = document.querySelector('.mainContent');
-        mainContent.style.marginTop ='0px',
+        mainContent.style.marginTop ='0px';
         buttonPn.style.display = 'none';
     }
     
