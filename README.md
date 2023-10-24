@@ -15,7 +15,7 @@ Popcorn est un site de films et de vidéos. Il permet aux utilisateurs de recher
 
 # Technologies utilisées
 - HTML, CSS, JAVASCRIPT
-- TMDB pour obtenir les informations des films et des séries, telles que le titre, l'image, la description, ...
+- L'API TMDB pour obtenir les informations des films et des séries, telles que le titre, l'image, la description, ...
 
 # Auteurs
 - Abderrahim Khadri (username: abde109)
